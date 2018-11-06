@@ -1,0 +1,74 @@
+
+:root{
+    --main-color:rgba(219, 205, 164, 0.986);
+    --sec-color:rgba(0, 0, 0, 0.1);
+    --background-color: #fafafa;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    background: var(--background-color)
+  }
+  .history {
+    width: 300px;
+    margin: auto;
+    box-shadow: -40px 40px 150px var(--sec-color);
+    text-align: center;
+    font: bold 25px/1.5 sans-serif;
+    background: #fff;
+    padding: 0;
+    position: relative;
+    border-radius: 5px;
+  }
+  .history:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: var(--sec-color);
+    z-index: -1;
+    transform: rotate(2deg);
+  }
+  .history:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: var(--sec-color);
+    z-index: -1;
+    transform: rotate(-2deg);
+  }
+  .day {
+    border-bottom: 1px solid var(--sec-color);
+  }
+  .day h1 {
+    margin: 0%;
+    padding: 15px 0;
+  }
+  .month {
+    padding: 10px;
+    border-bottom: 1px solid var(--background-color);
+    position: relative;
+  }
+  .month h1 {
+    font-size: 6rem;
+    margin: 10%;
+  }
+  .month span {
+    display: inline-block;
+    position: absolute;
+    top: 38%;
+    left: 10%;
+  }
+  .year {
+    background: var(--main-color,red)
+  }
+  .year h3 {
+    margin: 0;
+    padding: 20px 0;
+  }
+  
